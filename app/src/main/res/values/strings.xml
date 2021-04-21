@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OlaMundo</string>
+    <string name="enviar">Enviar</string>
+    <string name="name">Name</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="mensagem_recebida">Mensagem recebida</string>
+</resources>
