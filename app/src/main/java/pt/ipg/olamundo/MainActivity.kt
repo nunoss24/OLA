@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
 
         val mensagem = editTextMensagem.text.toString()
 
+        if(mensagem.trim().isBlank()){
+            editTextMensagem.error="Não vou enviar uma mensagem em branco"
+            return
+        }
+
         val intent = Intent(this, MostraMensagemActivity::class.java)
         intent.putExtra(INFO_EXTRA_MENSAGEM, mensagem)
         startActivity(intent)
