@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val mensagem = editTextMensagem.text.toString()
 
         if(mensagem.trim().isBlank()){
-            editTextMensagem.error="Não vou enviar uma mensagem em branco"
+            editTextMensagem.error=getString(R.string.Mensagem_vazia)
             return
         }
 
