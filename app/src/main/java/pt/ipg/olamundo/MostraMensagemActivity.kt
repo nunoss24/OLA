@@ -3,6 +3,7 @@ package pt.ipg.olamundo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MostraMensagemActivity : AppCompatActivity() {
@@ -17,7 +18,9 @@ class MostraMensagemActivity : AppCompatActivity() {
         textViewMensagem.setText(mensagem)
 
         val textViewDataHora = findViewById<TextView>(R.id.textView3)
-        textViewDataHora.setText((data.toString()))
+        val df = SimpleDateFormat("HH:mm:ss")
+
+        textViewDataHora.setText(data.toString())
 
     }
 }
