@@ -20,7 +20,7 @@ class MostraMensagemActivity : AppCompatActivity() {
         val textViewDataHora = findViewById<TextView>(R.id.textView3)
         val df = SimpleDateFormat("HH:mm:ss")
 
-        textViewDataHora.setText(data.toString())
+        textViewDataHora.setText(df.format(data))
 
     }
 }
